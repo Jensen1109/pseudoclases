@@ -69,3 +69,10 @@
 .ejer4-5-6 input:focus{
     border: 1px solid #000;
 }
+
+
+.ejer7 .text:only-of-type{
+    color: tomato;
+    font-weight: bold;
+    font-style: italic;
+}
