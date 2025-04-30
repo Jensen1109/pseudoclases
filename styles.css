@@ -36,3 +36,36 @@
     color: steelblue;
     font-weight: 600px;
 }
+
+.ejer4-5-6{
+    width: 70%;
+    background-color: #d9d7d7;
+    margin-left: 20px;
+    margin-top: 10px;
+    padding: 30px;
+}
+.ejer4-5-6 h3{
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 900px;
+}
+.ejer4-5-6 input{
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cacaca;
+    margin-bottom: 23px;
+    transition: 0.8s;
+}
+.ejer4-5-6 input[type="text"]:invalid{
+    border-color:brown;
+}
+.ejer4-5-6 input[type="email"]{
+    border-color: blue;
+}
+.ejer4-5-6 input[type="password"]{
+    margin-bottom: 5px;
+}
+.ejer4-5-6 input:focus{
+    border: 1px solid #000;
+}
