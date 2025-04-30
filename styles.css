@@ -15,3 +15,19 @@
 .ejer1 button:hover{
     background-color: yellowgreen;
 }
+.oculto{
+    display:none;
+    margin-top:20px;
+    padding:10px;
+    background-color: #f1c40f;
+    border-left: 4px solid #f4f4;
+    color: #0d49a1;
+    transition: 1s;
+}
+.oculto:target{
+    display:block;
+}
+.ejer2{
+    color: black;
+    text-decoration: none;
+}
