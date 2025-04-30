@@ -76,3 +76,8 @@
     font-weight: bold;
     font-style: italic;
 }
+.ejer8 .parrafo:first-of-type{
+    font-weight: bold;
+    font-style: italic;
+    color: seagreen;
+}
