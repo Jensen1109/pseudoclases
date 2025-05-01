@@ -217,3 +217,27 @@ display: inline-block;
 .ejer17 .botoneliminar:hover{
     color: brown;
 }
+
+
+.ejer18 .navbarra{
+    display: flex;
+    position: fixed;
+    margin: 0;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.ejer18 .navbarra a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    color: black;
+    background-color: slateblue;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.navbarra a:hover{
+    background-color: aqua;
+    color: white            ;
+}
