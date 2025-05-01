@@ -110,3 +110,10 @@
     content: "🐱‍👤";
     margin-right: 11px;
 }
+.ejer12 p{
+    font-weight: bold;
+}
+.ejer12 p::after {
+    content: "--:--:--:--:--:--*--*:p";
+    margin-left: 5px;
+}
