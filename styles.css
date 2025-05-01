@@ -106,3 +106,7 @@
     background-color: var(--color);
     color: white;
 }
+.ejer11 h3::before{
+    content: "🐱‍👤";
+    margin-right: 11px;
+}
