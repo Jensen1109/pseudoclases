@@ -169,3 +169,14 @@ display: inline-block;
     border: 1px solid #ccc;
     border-radius: 3px;
 }
+.ejer16{
+    display: inline-block;
+    width: 100%;
+    border: 1px solid #cacaca;
+    padding: 20px;
+    position: relative;
+}
+.ejer16 img{
+    position: relative;
+    width: 100%;
+}
