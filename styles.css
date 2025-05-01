@@ -149,3 +149,23 @@ div{
 .ejer14 .comillas::before, .comillas::after {
 content: "''";
 }
+
+.ejer15{
+position: relative;
+display: inline-block;
+}
+
+.ejer15::before{
+    content: "🔥"; 
+    position: absolute;
+    padding-left: 10px;
+    padding-top: 33px;
+    transform: translateY(-50%);
+}
+.ejer15 input{
+    padding-left: 30px;
+    height: 32px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
