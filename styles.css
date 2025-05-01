@@ -143,3 +143,9 @@ div{
     z-index: -1;
     border-radius: 5px;
 }
+.ejer14 .comillas {
+    font-weight: bold;
+}
+.ejer14 .comillas::before, .comillas::after {
+content: "''";
+}
