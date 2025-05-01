@@ -180,3 +180,40 @@ display: inline-block;
     position: relative;
     width: 100%;
 }
+
+.ejer17 button{
+    position: relative;
+    color: black;
+    background-color: cadetblue;
+    padding: 15px 20px;
+    font-size: 15px;
+    border: none;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.ejer17{
+    position: relative;
+    width: 300px;
+    padding: 20px;
+    background-color:cadetblue;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0,1);
+    font-family: sans-serif;
+    margin: 20px;
+}
+.ejer17 .boton-eliminar{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 17px;
+    color: white;
+    cursor: pointer;
+    transition: 1s;
+}
+.ejer17 .botoneliminar:hover{
+    color: brown;
+}
