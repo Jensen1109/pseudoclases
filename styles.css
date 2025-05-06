@@ -265,3 +265,28 @@ display: inline-block;
     left: 140px;
     z-index: 2;
 }
+.ejer20{
+    position: relative;
+    background-color: grey;
+}
+.card20 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: rgb(200, 50,50);
+    width: 350px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 14px rgba(0, 0, 0,1);
+    text-align: center;
+}
+
+.card20 h2{
+    font-weight: bold;
+    margin-top: 5px;
+    color: rgb(0, 13, 255);
+}
+
+.card20 p{
+    color: black;
+}
