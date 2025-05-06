@@ -1,303 +1,380 @@
 :root{
-    --color: #0000ff;
-    --ejer21-titulo:#da0000;
-    --ejer21-fondo:#79bd7f;
-    --ejer22-fondo:rgb(135, 118, 118);
+    /* Variables de colores definidas en :root para reutilización global */
+    --color: #0000ff; /* Azul */
+    --ejer21-titulo: #da0000; /* Rojo para títulos del ejercicio 21 */
+    --ejer21-fondo: #79bd7f; /* Verde claro para el fondo del ejercicio 21 */
+    --ejer22-fondo: rgb(135, 118, 118); /* Gris claro para el fondo del ejercicio 22 */
 }
 
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    /* Reset de márgenes, relleno y ajuste de box-sizing a border-box */
+    margin: 0; /* Elimina márgenes por defecto */
+    padding: 0; /* Elimina rellenos por defecto */
+    box-sizing: border-box; /* Asegura que el padding y border no afecten el tamaño total del elemento */
 }
+
 body{
-    background-color: var(--ejer22-fondo,rgb(175, 200, 127));
+    /* Estilo general para el fondo del cuerpo de la página */
+    background-color: var(--ejer22-fondo,rgb(175, 200, 127)); /* Usa variable de fondo o el color de fallback */
 }
+
 div{
-    margin-top: 30px;
-    padding-left: 20px;
-    padding-right: 30px;
+    /* Estilos generales para los elementos <div> */
+    margin-top: 30px; /* Márgenes superiores */
+    padding-left: 20px; /* Relleno a la izquierda */
+    padding-right: 30px; /* Relleno a la derecha */
 }
 
 .ejer1 button{
-    color: brown;
-    background-color: steelblue;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    transition: 1s;
-    font-size: 16px;
+    /* Estilo para los botones del ejercicio 1 */
+    color: brown; /* Texto en marrón */
+    background-color: steelblue; /* Fondo azul acero */
+    padding: 10px 20px; /* Relleno dentro del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: 1s; /* Transición suave al hacer hover */
+    font-size: 16px; /* Tamaño de la fuente */
 }
+
 .ejer1 button:hover{
-    background-color: yellowgreen;
+    /* Cambio de fondo cuando el mouse pasa sobre el botón */
+    background-color: yellowgreen; /* Fondo en verde amarillento */
 }
+
 .oculto{
-    display:none;
-    margin-top:20px;
-    padding:10px;
-    background-color: #f1c40f;
-    border-left: 4px solid #f4f4;
-    color: #0d49a1;
-    transition: 1s;
+    /* Estilo para el elemento oculto que solo se muestra al ser seleccionado */
+    display:none; /* Elemento oculto por defecto */
+    margin-top:20px; /* Espaciado superior */
+    padding:10px; /* Relleno interno */
+    background-color: #f1c40f; /* Fondo amarillo */
+    border-left: 4px solid #f4f4; /* Borde izquierdo gris */
+    color: #0d49a1; /* Texto azul */
+    transition: 1s; /* Transición suave */
 }
+
 .oculto:target{
-    display:block;
+    /* Hace visible el elemento cuando se selecciona mediante un enlace */
+    display:block; /* Se muestra */
 }
+
 .ejer2{
-    color: black;
-    text-decoration: none;
+    /* Estilo para los enlaces del ejercicio 2 */
+    color: black; /* Texto negro */
+    text-decoration: none; /* Elimina subrayado */
 }
+
 .ejer3 li:first-child{
-    font-style: italic;
-    color: steelblue;
-    font-weight: 600px;
+    /* Estilo para el primer <li> dentro de .ejer3 */
+    font-style: italic; /* Texto en cursiva */
+    color: steelblue; /* Texto azul acero */
+    font-weight: 600px; /* Peso de la fuente, debe ser sin px */
 }
 
 .ejer4-5-6{
-    width: 70%;
-    background-color: #d9d7d7;
-    margin-left: 20px;
-    margin-top: 10px;
-    padding: 30px;
-}
-.ejer4-5-6 h3{
-    text-align: center;
-    margin-bottom: 10px;
-    font-weight: 900px;
-}
-.ejer4-5-6 input{
-    display: block;
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #cacaca;
-    margin-bottom: 23px;
-    transition: 0.8s;
-}
-.ejer4-5-6 input[type="text"]:invalid{
-    border-color:brown;
-}
-.ejer4-5-6 input[type="email"]{
-    border-color: blue;
-}
-.ejer4-5-6 input[type="password"]{
-    margin-bottom: 5px;
-}
-.ejer4-5-6 input:focus{
-    border: 1px solid #000;
+    /* Estilos para los contenedores de los ejercicios 4, 5 y 6 */
+    width: 70%; /* Ancho del contenedor */
+    background-color: #d9d7d7; /* Fondo gris claro */
+    margin-left: 20px; /* Márgenes izquierdo */
+    margin-top: 10px; /* Márgenes superior */
+    padding: 30px; /* Relleno interno */
 }
 
+.ejer4-5-6 h3{
+    /* Estilo para los encabezados h3 dentro del contenedor */
+    text-align: center; /* Alineación al centro */
+    margin-bottom: 10px; /* Espaciado inferior */
+    font-weight: 900px; /* Peso de la fuente, debe ser sin px */
+}
+
+.ejer4-5-6 input{
+    /* Estilo para los campos de entrada */
+    display: block; /* Se muestra como bloque */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 12px; /* Relleno interno */
+    border: 1px solid #cacaca; /* Borde gris claro */
+    margin-bottom: 23px; /* Espaciado inferior */
+    transition: 0.8s; /* Transición suave */
+}
+
+.ejer4-5-6 input[type="text"]:invalid{
+    /* Estilo para campos de texto inválidos */
+    border-color:brown; /* Borde marrón */
+}
+
+.ejer4-5-6 input[type="email"]{
+    /* Estilo para campos de correo electrónico */
+    border-color: blue; /* Borde azul */
+}
+
+.ejer4-5-6 input[type="password"]{
+    /* Estilo para los campos de contraseña */
+    margin-bottom: 5px; /* Menor espaciado inferior */
+}
+
+.ejer4-5-6 input:focus{
+    /* Estilo para los campos de entrada cuando reciben foco */
+    border: 1px solid #000; /* Borde negro */
+}
 
 .ejer7 .text:only-of-type{
-    color: tomato;
-    font-weight: bold;
-    font-style: italic;
+    /* Estilo para el único elemento de tipo .text dentro de .ejer7 */
+    color: tomato; /* Color tomate */
+    font-weight: bold; /* Negrita */
+    font-style: italic; /* Cursiva */
 }
+
 .ejer8 .parrafo:first-of-type{
-    font-weight: bold;
-    font-style: italic;
-    color: seagreen;
+    /* Estilo para el primer párrafo dentro de .ejer8 */
+    font-weight: bold; /* Negrita */
+    font-style: italic; /* Cursiva */
+    color: seagreen; /* Color verde mar */
 }
 
 .ejer9 h4{
-    color: var(--color);
-    font-weight: bold;
+    /* Estilo para los encabezados h4 dentro de .ejer9 */
+    color: var(--color); /* Usando la variable CSS para color */
+    font-weight: bold; /* Negrita */
 }
+
 .ejer10 .navegar{
-    display: flex;
-    justify-content: space-between;
+    /* Estilo para el contenedor de navegación del ejercicio 10 */
+    display: flex; /* Flexbox */
+    justify-content: space-between; /* Espaciado entre los elementos */
 }
+
 .navegar a{
-    text-decoration: none;
-    font-weight: 500;
-    color: black;
-    padding: 20px;
-    background-color: brown;
-    border-radius: 5px;
+    /* Estilo para los enlaces dentro de .navegar */
+    text-decoration: none; /* Elimina subrayado */
+    font-weight: 500; /* Peso de la fuente */
+    color: black; /* Color negro */
+    padding: 20px; /* Relleno interno */
+    background-color: brown; /* Fondo marrón */
+    border-radius: 5px; /* Bordes redondeados */
 }
+
 .navegar a:hover{
-    background-color: var(--color);
-    color: white;
+    /* Estilo cuando el mouse pasa sobre los enlaces */
+    background-color: var(--color); /* Cambio a color definido en variable */
+    color: white; /* Texto blanco */
 }
+
 .ejer11 h3::before{
-    content: "🐱‍👤";
-    margin-right: 11px;
+    /* Añade un contenido antes del encabezado h3 */
+    content: "🐱‍👤"; /* Emoji de ninja */
+    margin-right: 11px; /* Espaciado a la derecha */
 }
+
 .ejer12 p{
-    font-weight: bold;
+    /* Estilo para los párrafos en .ejer12 */
+    font-weight: bold; /* Negrita */
 }
+
 .ejer12 p::after {
-    content: "--:--:--:--:--:--*--*:p";
-    margin-left: 5px;
+    /* Añade contenido después del párrafo */
+    content: "--:--:--:--:--:--*--*:p"; /* Texto añadido después */
+    margin-left: 5px; /* Espaciado a la izquierda */
 }
+
 .ejer13 button{
-    position: relative;
-    color: black;
-    background-color: cadetblue;
-    padding: 15px 20px;
-    font-size: 15px;
-    border: none;
-    margin: 10px;
-    border-radius: 5px;
+    /* Estilo para los botones en el ejercicio 13 */
+    position: relative; /* Posición relativa */
+    color: black; /* Texto negro */
+    background-color: cadetblue; /* Fondo azul cadete */
+    padding: 15px 20px; /* Relleno interno */
+    font-size: 15px; /* Tamaño de la fuente */
+    border: none; /* Sin borde */
+    margin: 10px; /* Márgenes */
+    border-radius: 5px; /* Bordes redondeados */
 }
+
 .ejer13 button::after{
-    content: "";
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    width: 100%;
-    height: 100%;
-    background-color: yellowgreen;
-    z-index: -1;
-    border-radius: 5px;
+    /* Añade un fondo detrás del botón */
+    content: ""; /* Sin contenido visible */
+    position: absolute; /* Posición absoluta */
+    top: 5px; /* 5px desde la parte superior */
+    left: 5px; /* 5px desde la izquierda */
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Alto completo */
+    background-color: yellowgreen; /* Fondo amarillo verdoso */
+    z-index: -1; /* Colocado detrás del botón */
+    border-radius: 5px; /* Bordes redondeados */
 }
+
 .ejer14 .comillas {
-    font-weight: bold;
+    /* Estilo para los elementos con la clase .comillas */
+    font-weight: bold; /* Negrita */
 }
+
 .ejer14 .comillas::before, .comillas::after {
-content: "''";
+    /* Añade comillas alrededor del texto */
+    content: "''"; /* Comillas simples */
 }
 
 .ejer15{
-position: relative;
-display: inline-block;
+    /* Estilo para los contenedores del ejercicio 15 */
+    position: relative; /* Posición relativa */
+    display: inline-block; /* Mostrar como bloque en línea */
 }
 
 .ejer15::before{
-    content: "🔥"; 
-    position: absolute;
-    padding-left: 10px;
-    padding-top: 33px;
-    transform: translateY(-50%);
+    /* Añade un emoji de fuego antes del contenido */
+    content: "🔥"; /* Emoji de fuego */
+    position: absolute; /* Posición absoluta */
+    padding-left: 10px; /* Relleno a la izquierda */
+    padding-top: 33px; /* Relleno hacia arriba */
+    transform: translateY(-50%); /* Ajuste vertical */
 }
+
 .ejer15 input{
-    padding-left: 30px;
-    height: 32px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
+    /* Estilo para el campo de entrada dentro de .ejer15 */
+    padding-left: 30px; /* Relleno izquierdo */
+    height: 32px; /* Altura */
+    font-size: 14px; /* Tamaño de la fuente */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 3px; /* Bordes redondeados */
 }
+
 .ejer16{
-    display: inline-block;
-    width: 100%;
-    border: 1px solid #cacaca;
-    padding: 20px;
-    position: relative;
+    /* Estilo para el contenedor del ejercicio 16 */
+    display: inline-block; /* Mostrar como bloque en línea */
+    width: 100%; /* Ancho completo */
+    border: 1px solid #cacaca; /* Borde gris claro */
+    padding: 20px; /* Relleno */
+    position: relative; /* Posición relativa */
 }
+
 .ejer16 img{
-    position: relative;
-    width: 100%;
+    /* Estilo para las imágenes dentro de .ejer16 */
+    position: relative; /* Posición relativa */
+    width: 100%; /* Ancho completo */
 }
 
 .ejer17 button{
-    position: relative;
-    color: black;
-    background-color: cadetblue;
-    padding: 15px 20px;
-    font-size: 15px;
-    border: none;
-    margin: 10px;
-    border-radius: 5px;
+    /* Estilo para los botones del ejercicio 17 */
+    position: relative; /* Posición relativa */
+    color: black; /* Texto negro */
+    background-color: cadetblue; /* Fondo azul cadete */
+    padding: 15px 20px; /* Relleno interno */
+    font-size: 15px; /* Tamaño de la fuente */
+    border: none; /* Sin borde */
+    margin: 10px; /* Márgenes */
+    border-radius: 5px; /* Bordes redondeados */
 }
 
 .ejer17{
-    --color-borde:#6a66;
-    position: relative;
-    width: 300px;
-    padding: 20px;
-    background-color:cadetblue;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0,1);
-    font-family: sans-serif;
-    margin: 20px;
-}
-.ejer17 .boton-eliminar{
-    --color-boton:#e847bf;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: none;
-    border: none;
-    font-size: 17px;
-    color: white;
-    cursor: pointer;
-    transition: 1s;
-}
-.ejer17 .botoneliminar:hover{
-    color: brown;
+    /* Estilo para el contenedor del ejercicio 17 */
+    --color-borde: #6a66; /* Variable personalizada para el borde */
+    position: relative; /* Posición relativa */
+    width: 300px; /* Ancho fijo */
+    padding: 20px; /* Relleno */
+    background-color: cadetblue; /* Fondo azul cadete */
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1); /* Sombra */
+    font-family: sans-serif; /* Fuente sans-serif */
+    margin: 20px; /* Márgenes */
 }
 
+.ejer17 .boton-eliminar{
+    /* Estilo para el botón de eliminar */
+    --color-boton: #e847bf; /* Color personalizado */
+    position: absolute; /* Posición absoluta */
+    top: 10px; /* Posición superior */
+    right: 10px; /* Posición derecha */
+    background: none; /* Sin fondo */
+    border: none; /* Sin borde */
+    font-size: 17px; /* Tamaño de la fuente */
+    color: white; /* Texto blanco */
+    cursor: pointer; /* Cursor en forma de puntero */
+    transition: 1s; /* Transición suave */
+}
+
+.ejer17 .boton-eliminar:hover{
+    /* Estilo cuando el botón de eliminar tiene el hover */
+    color: brown; /* Color marrón */
+}
 
 .ejer18 .navbarra{
-    display: flex;
-    position: fixed;
-    margin: 0;
-    width: 100%;
-    justify-content: space-around;
+    /* Estilo para la barra de navegación del ejercicio 18 */
+    display: flex; /* Flexbox */
+    position: fixed; /* Fijo en la parte superior */
+    margin: 0; /* Sin márgenes */
+    width: 100%; /* Ancho completo */
+    justify-content: space-around; /* Espaciado entre los enlaces */
 }
 
 .ejer18 .navbarra a{
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 15px;
-    color: black;
-    background-color: slateblue;
-    padding: 7px;
-    border-radius: 5px;
+    /* Estilo para los enlaces dentro de la barra de navegación */
+    text-decoration: none; /* Elimina subrayado */
+    font-weight: 600; /* Peso de la fuente */
+    font-size: 15px; /* Tamaño de la fuente */
+    color: black; /* Texto negro */
+    background-color: slateblue; /* Fondo azul pizarra */
+    padding: 7px; /* Relleno */
+    border-radius: 5px; /* Bordes redondeados */
 }
 
 .navbarra a:hover{
-    background-color: aqua;
-    color: white            ;
+    /* Estilo cuando el mouse pasa sobre los enlaces de la barra de navegación */
+    background-color: aqua; /* Fondo azul claro */
+    color: white; /* Texto blanco */
 }
 
 .ejer19 .caja{
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    color: white;
-    font-size: 20px;
-    display: block;
-    align-items: center;
-    justify-content: center;
-    border-radius: 15px;
+    /* Estilo para los elementos .caja */
+    position: absolute; /* Posición absoluta */
+    width: 100px; /* Ancho */
+    height: 100px; /* Alto */
+    color: white; /* Texto blanco */
+    font-size: 20px; /* Tamaño de la fuente */
+    display: block; /* Se muestra como bloque */
+    align-items: center; /* Alineación */
+    justify-content: center; /* Centrado */
+    border-radius: 15px; /* Bordes redondeados */
 }
+
 .caja1{
-    background-color: red;
-    left: 100px;
-    z-index: 1;
-    margin: 0 auto;
+    /* Estilo para .caja1 */
+    background-color: red; /* Fondo rojo */
+    left: 100px; /* Posición izquierda */
+    z-index: 1; /* Aparece encima */
+    margin: 0 auto; /* Centrado */
 }
 
 .caja2{
-    background-color: blue;
-    left: 140px;
-    z-index: 2;
+    /* Estilo para .caja2 */
+    background-color: blue; /* Fondo azul */
+    left: 140px; /* Posición izquierda */
+    z-index: 2; /* Aparece encima */
 }
+
 .ejer20{
-    position: relative;
-    background-color: grey;
+    /* Estilo para el contenedor del ejercicio 20 */
+    position: relative; /* Posición relativa */
+    background-color: grey; /* Fondo gris */
 }
+
 .card20 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    background-color: var(--ejer21-fondo);
-    width: 350px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 5px 14px rgba(0, 0, 0,1);
-    text-align: center;
+    /* Estilo para la tarjeta del ejercicio 20 */
+    position: absolute; /* Posición absoluta */
+    top: 50%; /* Centrado vertical */
+    left: 50%; /* Centrado horizontal */
+    background-color: var(--ejer21-fondo); /* Fondo usando variable */
+    width: 350px; /* Ancho fijo */
+    padding: 20px; /* Relleno interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 1); /* Sombra */
+    text-align: center; /* Centrado de texto */
 }
 
 .card20 h2{
-    font-weight: bold;
-    margin-top: 5px;
-    color: var(--ejer21-titulo);
+    /* Estilo para el título dentro de la tarjeta */
+    font-weight: bold; /* Negrita */
+    margin-top: 5px; /* Espaciado superior */
+    color: var(--ejer21-titulo); /* Color usando variable */
 }
 
 .card20 p{
-    color: black;
+    /* Estilo para los párrafos dentro de la tarjeta */
+    color: black; /* Texto negro */
 }
-
-
