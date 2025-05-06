@@ -11,7 +11,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: var(--ejer22-fondo);
+    background-color: var(--ejer22-fondo,rgb(175, 200, 127));
 }
 div{
     margin-top: 30px;
