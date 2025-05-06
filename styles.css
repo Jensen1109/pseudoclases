@@ -1,5 +1,7 @@
 :root{
     --color: #0000ff;
+    --ejer21-titulo:#da0000;
+    --ejer21-fondo:#79bd7f;
 }
 
 *{
@@ -273,7 +275,7 @@ display: inline-block;
     position: absolute;
     top: 50%;
     left: 50%;
-    background-color: rgb(200, 50,50);
+    background-color: var(--ejer21-fondo);
     width: 350px;
     padding: 20px;
     border-radius: 10px;
@@ -284,7 +286,7 @@ display: inline-block;
 .card20 h2{
     font-weight: bold;
     margin-top: 5px;
-    color: rgb(0, 13, 255);
+    color: var(--ejer21-titulo);
 }
 
 .card20 p{
