@@ -200,6 +200,7 @@ display: inline-block;
 }
 
 .ejer17{
+    --color-borde:#6a66;
     position: relative;
     width: 300px;
     padding: 20px;
@@ -211,6 +212,7 @@ display: inline-block;
     margin: 20px;
 }
 .ejer17 .boton-eliminar{
+    --color-boton:#e847bf;
     position: absolute;
     top: 10px;
     right: 10px;
