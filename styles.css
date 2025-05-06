@@ -241,3 +241,27 @@ display: inline-block;
     background-color: aqua;
     color: white            ;
 }
+
+.ejer19 .caja{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    color: white;
+    font-size: 20px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+.caja1{
+    background-color: red;
+    left: 100px;
+    z-index: 1;
+    margin: 0 auto;
+}
+
+.caja2{
+    background-color: blue;
+    left: 140px;
+    z-index: 2;
+}
