@@ -2,6 +2,7 @@
     --color: #0000ff;
     --ejer21-titulo:#da0000;
     --ejer21-fondo:#79bd7f;
+    --ejer22-fondo:rgb(135, 118, 118);
 }
 
 *{
@@ -9,11 +10,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: var(--ejer22-fondo);
+}
 div{
     margin-top: 30px;
     padding-left: 20px;
     padding-right: 30px;
 }
+
 .ejer1 button{
     color: brown;
     background-color: steelblue;
@@ -292,3 +297,5 @@ display: inline-block;
 .card20 p{
     color: black;
 }
+
+
