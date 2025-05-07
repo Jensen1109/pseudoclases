@@ -138,8 +138,8 @@ div{
 
 .ejer10 .navegar{
     /* Estilo para el contenedor de navegación del ejercicio 10 */
-    display: flex; /* Flexbox */
-    justify-content: space-between; /* Espaciado entre los elementos */
+    display: inline-block; /* Mostrar como bloque en línea */
+    
 }
 
 .navegar a{
@@ -150,6 +150,7 @@ div{
     padding: 20px; /* Relleno interno */
     background-color: brown; /* Fondo marrón */
     border-radius: 5px; /* Bordes redondeados */
+    margin-right: 150px; /* Espaciado a la derecha */
 }
 
 .navegar a:hover{
@@ -296,11 +297,11 @@ div{
 
 .ejer18 .navbarra{
     /* Estilo para la barra de navegación del ejercicio 18 */
-    display: flex; /* Flexbox */
+    display: inline-block; /* Mostrar como bloque en línea */
     position: fixed; /* Fijo en la parte superior */
-    margin: 0; /* Sin márgenes */
+    margin: 0 auto; /* Sin márgenes */
     width: 100%; /* Ancho completo */
-    justify-content: space-around; /* Espaciado entre los enlaces */
+
 }
 
 .ejer18 .navbarra a{
@@ -310,8 +311,9 @@ div{
     font-size: 15px; /* Tamaño de la fuente */
     color: black; /* Texto negro */
     background-color: slateblue; /* Fondo azul pizarra */
-    padding: 7px; /* Relleno */
+    padding: 10px; /* Relleno */
     border-radius: 5px; /* Bordes redondeados */
+    margin-left: 280px;  /* Espaciado a la izquierda */
 }
 
 .navbarra a:hover{
